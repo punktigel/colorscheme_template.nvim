@@ -1,0 +1,1 @@
+# colorscheme_template.nvim
