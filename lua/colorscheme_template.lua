@@ -16,7 +16,7 @@ function M.set_colorscheme(variant)
     -- set the name
     vim.g.colors_name = 'colorscheme_template'
 
-    require('colorscheme_template.set_theme')._load()
+    require('colorscheme_template.set_theme')._load() -- load/set the colors of the variant
 end
 
 function M.setup(options)
