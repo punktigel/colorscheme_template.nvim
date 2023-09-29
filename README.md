@@ -4,12 +4,28 @@ This is a color scheme template to create new color schemes.
 
 
 
+## Install
+
+[packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use 'punktigel/colorscheme_template.nvim'
+```
+Change the path to fit the repository
+- Online
+- Local
+
+
 ## Groups
 You can set the color for each group or link them to other groups with the same colors.
 
 ### Highlight groups
-Vim has default [highlight groups](https://neovim.io/doc/user/syntax.html#highlight-blend)
-``` :help highlight-groups```
+Vim has default highlight groups - [Doc Highlight groups](https://neovim.io/doc/user/syntax.html#highlight-blend)
+
+```
+help highlight-groups
+```
+
 
 <details>
 <summary><h4>Highlight groups</h4></summary>
@@ -92,8 +108,12 @@ Vim has default [highlight groups](https://neovim.io/doc/user/syntax.html#highli
 
 
 ### Syntax groups
-Show default [syntax groups](https://neovim.io/doc/user/syntax.html)
-```:help group-name```
+Show default syntax groups - [Doc Syntax groups](https://neovim.io/doc/user/syntax.html#group-name)
+
+```
+help group-name
+```
+
 
 <details>
 <summary><h4>Syntax groups</h4></summary>
@@ -139,6 +159,9 @@ Show default [syntax groups](https://neovim.io/doc/user/syntax.html)
 </details>
 
 Highlight groups can be **linked** to other groups - they have the same highlighting!
+```
+vim.api.nvim_set_hl(0, 'group name', {link = 'group name'})
+```
 
 All groups without a ```*``` are linked to the previous one. For example ```String``` is linked to ```Constant```
 
@@ -146,7 +169,7 @@ All groups without a ```*``` are linked to the previous one. For example ```Stri
 
 You can also run the ```hitest.vim``` file to see all active groups and their colors
 ```
-:so $VIMRUNTIME/syntax/hitest.vim
+so $VIMRUNTIME/syntax/hitest.vim
 ```
 
 
@@ -167,6 +190,11 @@ You can also run the ```hitest.vim``` file to see all active groups and their co
 ```
 
 Vim (Neovim) has default color schemes located at ```$VIMRUNTIME/colors/```
+
+Show ```$VIMRUNTIME``` path
+```vim
+echo $VIMRUNTIME
+```
 
 Vim (Neovim) will search for specific folders and file types. You can see the list with ```:help runtimepath``` or ```:help rtp```
 - color scheme file are stored in a ```colors/``` folder
