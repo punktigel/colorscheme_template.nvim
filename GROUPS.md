@@ -199,3 +199,26 @@ help highlight-args
 
 ```
 
+## Plugins
+### Telescope
+
+```lua
+-- Telescope
+['TelescopeBorder'] = {}, -- Windowborder
+-- ['TelesopeResultBorder'] = {},
+-- ['TelesopePreviewBorder'] = {},
+-- ['TelescopePromptBorder'] = {},
+
+['TelescopeMatching'] = {}, -- Matching characters from your input
+
+['TelescopeSelection'] = {}, -- Selected item
+['TelescopeMultiSelection'] = {}, -- Multiselections
+['TelescopeSelectionCaret'] = {}, -- Selection caret
+
+['TelescopeNormal'] = {},
+['TelescopeTitle'] = {},
+
+['TelescopePromptPrefix'] = {}, -- Prompt prefix
+['TelescopePromptCounter'] = {}, -- Prompt item counter
+
+```
