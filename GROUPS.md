@@ -6,6 +6,9 @@ Copy these groups to clear all highlighting
 - [Highlight options](#highlight-options)
 - [Highlight groups](#highlight-groups)
 - [Syntax groups](#syntax-groups)
+- [Plugins](#plugins)
+    - [Telescope](#telescope)
+    - [GitSigns](#gitsigns)
 
 
 ## Highlight options
@@ -222,3 +225,12 @@ help highlight-args
 ['TelescopePromptCounter'] = {}, -- Prompt item counter
 
 ```
+
+### GitSigns
+```lua
+-- Lines Added/Changed/Deleted
+["GitSignsAdd"] = {},
+["GitSignsChange"] = {},
+["GitSignsDelete"] = {},
+```
+
