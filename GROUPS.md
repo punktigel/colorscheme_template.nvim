@@ -9,6 +9,7 @@ Copy these groups to clear all highlighting
 - [Plugins](#plugins)
     - [Telescope](#telescope)
     - [GitSigns](#gitsigns)
+    - [Dap UI](#dapui)
 
 
 ## Highlight options
@@ -232,5 +233,63 @@ help highlight-args
 ["GitSignsAdd"] = {},
 ["GitSignsChange"] = {},
 ["GitSignsDelete"] = {},
+```
+
+### DapUI
+```lua
+-- ["DapUINormal"] = {},        -- links to Normal
+-- ["DapUIVariable"] = {},      -- links to Normal
+["DapUIScope"] = {},            -- DAP Scope: local/global
+["DapUIType"] = {},             -- Datatype
+["DapUIValue"] = {},
+["DapUIModifiedValue"] = {},
+["DapUIDecoration"] = {},       -- Icons: expanded/collapsed
+
+-- DAP Stack (window)
+["DapUIThread"] = {},           -- DAP Stacks Threads
+["DapUIStoppedThread"] = {},    -- DAP Stacks Stopped Thread
+["DapUIFrameName"] = {},        -- Stack Frame
+["DapUISource"] = {},           -- Stack Frame Source
+["DapUILineNumber"] = {},       -- Stack LineNumbers
+
+["DapUIFloatNormal"] = {},
+["DapUIFloatBorder"] = {},
+
+-- DAP Watches (window)
+["DapUIWatchesEmpty"] = {}, -- Nothing selected
+["DapUIWatchesValue"] = {},
+["DapUIWatchesError"] = {},
+
+-- DAP Breakpoints (window)
+["DapUIBreakpointsPath"] = {},
+["DapUIBreakpointsInfo"] = {},
+["DapUIBreakpointsCurrentLine"] = {},   -- Current LineNumber Breakpoint
+-- ["DapUIBreakpointsLine"] = {},       -- links to DapUILineNumber
+["DapUIBreakpointsDisabledLine"] = {},
+-- ["DapUICurrentFrameName"] = {},      -- links to DapUIBreakpointsCurrentLine
+
+-- DAP replay (window) icons
+["DapUIStepOver"] = {},     -- StepOver Icon
+["DapUIStepInto"] = {},     -- StepInto Icon
+["DapUIStepBack"] = {},     -- StepBack Icon
+["DapUIStepOut"] = {},      -- StepOut Icon
+["DapUIStop"] = {},         -- Stop Icon
+["DapUIPlayPause"] = {},    -- Play/Pause Icon
+["DapUIRestart"] = {},      -- Restart Icon
+
+["DapUIUnavailable"] = {},
+["DapUIWinSelect"] = {},
+-- ["DapUIEndofBuffer"] = {}, -- links to EndOfBuffer
+
+-- DAP replay icons in an unfocused terminal (window)
+-- ["DapUINormalNC"] = {}, -- links to Normal
+["DapUIPlayPauseNC"] = {},
+["DapUIRestartNC"] = {},
+["DapUIStopNC"] = {},
+["DapUIUnavailableNC"] = {},
+["DapUIStepOverNC"] = {},
+["DapUIStepIntoNC"] = {},
+["DapUIStepBackNC"] = {},
+["DapUIStepOutNC"] = {},
 ```
 
